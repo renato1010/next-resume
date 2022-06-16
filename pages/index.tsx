@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { Page } from "@components";
+import { Page, DevPic } from "@components";
 import { HStack, VStack, Box, Flex } from "@chakra-ui/react";
 
 const Home: NextPage = () => {
@@ -14,7 +14,9 @@ const Home: NextPage = () => {
       </a>
       <Page>
         <Flex w="100%" h="100%" align="stretch" border="1px solid green">
-          <Box w="40%" h="100%" bg="#F1F2F5"></Box>
+          <VStack w="40%" h="100%" bg="#F1F2F5">
+            <DevPic />
+          </VStack>
           <Box w="60%" h="100%" bg="pink"></Box>
         </Flex>
       </Page>

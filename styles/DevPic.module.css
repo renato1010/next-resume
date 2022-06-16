@@ -1,0 +1,34 @@
+.devPic {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 60mm;
+  background-image: linear-gradient(
+    35deg,
+    hsl(218deg 82% 45%) 0%,
+    hsl(223deg 62% 54%) 9%,
+    hsl(224deg 59% 59%) 16%,
+    hsl(225deg 56% 64%) 23%,
+    hsl(226deg 53% 67%) 29%,
+    hsl(226deg 51% 70%) 35%,
+    hsl(226deg 48% 73%) 41%,
+    hsl(225deg 45% 76%) 46%,
+    hsl(225deg 42% 79%) 52%,
+    hsl(224deg 38% 81%) 57%,
+    hsl(222deg 34% 84%) 63%,
+    hsl(219deg 28% 86%) 69%,
+    hsl(213deg 22% 88%) 75%,
+    hsl(193deg 12% 90%) 80%,
+    hsl(114deg 12% 93%) 87%,
+    hsl(78deg 35% 95%) 93%,
+    hsl(68deg 79% 96%) 100%
+  );
+}
+.picFrame {
+  width: 175px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  border: 2px solid white;
+  overflow: hidden;
+  object-fit: cover;
+}
