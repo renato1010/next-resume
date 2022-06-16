@@ -6,8 +6,13 @@ const config: ThemeConfig = {
   initialColorMode: "light",
   useSystemColorMode: false,
 };
-
 // 3. extend the theme
-const theme = extendTheme({ config });
+const theme = extendTheme({
+  config,
+  fonts: {
+    heading: `"Fira Sans", ${base.fonts?.heading}`,
+    body: `"Fira Sans", ${base.fonts?.body}`,
+  },
+});
 
 export { theme };
