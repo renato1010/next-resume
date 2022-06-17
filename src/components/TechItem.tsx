@@ -1,5 +1,5 @@
 import { Center, Icon, Tooltip } from "@chakra-ui/react";
-import { IconType } from "react-icons";
+import type { IconType } from "react-icons";
 
 export type TechItemProps = {
   icon: IconType;

@@ -1,4 +1,4 @@
-import { Avatar, Square, Box } from "@chakra-ui/react";
+import { Square } from "@chakra-ui/react";
 import Image from "next/image";
 import profilePic from "public/images/profile_pic_w_697.jpg";
 import styles from "@styles/DevPic.module.css";

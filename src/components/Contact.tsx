@@ -1,5 +1,5 @@
 import { Box, Heading, HStack, Icon, Link } from "@chakra-ui/react";
-import { FaRegEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaRegEnvelope, FaGithub } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
 import { GoLocation } from "react-icons/go";
 
