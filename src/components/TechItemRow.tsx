@@ -6,7 +6,7 @@ type TechItemsRowProps = {
 };
 const TechItemsRow = ({ icons }: TechItemsRowProps) => {
   return (
-    <HStack pt="2" spacing="4">
+    <HStack pt="2" spacing="4" justify="flex-end">
       {icons.map((icon) => (
         <TechItem key={icon.label} icon={icon.icon} label={icon.label} />
       ))}

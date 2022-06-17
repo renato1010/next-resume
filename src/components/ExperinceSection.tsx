@@ -1,4 +1,4 @@
-import { ListItem, OrderedList, Text, UnorderedList } from "@chakra-ui/react";
+import { ListItem, OrderedList, Text, ListIcon, List } from "@chakra-ui/react";
 import { ExperienceItem, TechItemsRow } from "@components";
 import {
   SiGooglecloud,
@@ -8,26 +8,33 @@ import {
   SiSvelte,
   SiGraphql,
   SiApollographql,
-  SiAwsamplify,
+  SiPostgresql,
+  SiAmazonaws,
+  SiNextdotjs,
+  SiReact,
+  SiPrisma,
 } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
+import { FaRegCheckCircle } from "react-icons/fa";
 
 const ExperienceSection = () => {
   return (
     <>
       <ExperienceItem
-        title="HCL Tech - Contractor"
-        subtitle="June 2021 - June 2022; 100% Remote from Guatemala"
+        title="HCL Tech, US-Colombia - Contractor"
+        subtitle="June 2021 - May 2022; 100% Remote from Guatemala"
       >
-        <Text>Two phases project:</Text>
-        <OrderedList fontSize="medium" textAlign="justify">
+        <Text my={1} fontWeight="600">
+          Dialogflow CX virtual agent:
+        </Text>
+        <OrderedList spacing={2} fontSize="medium" textAlign="justify">
           <ListItem>
             Design and develop the Google DialogFlow CX virtual agent, as a
             component of a complete solution with Google Contact Center AI.
           </ListItem>
           <ListItem>
-            Develop an API as a proxy to the swarm of company services to
-            achieve user intent fulfillment through webhooks.
+            Develop an API as a proxy to the company services in order to
+            provide dynamic responses or save info supplied by user.
           </ListItem>
         </OrderedList>
         <TechItemsRow
@@ -53,23 +60,27 @@ const ExperienceSection = () => {
         />
       </ExperienceItem>
       <ExperienceItem
-        title="Sole Farms, Miama Fl - Sub contractor"
-        subtitle="December 2021 - May 2022; 100% Remote from Guatemala"
+        title="Sole Farms, Miami Fl - Sub contractor"
+        subtitle="Oct 2020 - May 2021; 100% Remote from Guatemala"
       >
-        <Text>Management Dashboard</Text>
-        <UnorderedList fontSize="medium" textAlign="justify">
+        <Text my={1} fontWeight="600">
+          Admin Dashboard
+        </Text>
+        <List spacing={2} fontSize="medium" textAlign="justify">
           <ListItem>
-            Supply chain management dashboard with actions and data
-            visualization
+            <ListIcon as={FaRegCheckCircle} color="blue.500" />
+            Supply chain management dashboard; actions and data visualization
           </ListItem>
           <ListItem>
+            <ListIcon as={FaRegCheckCircle} color="blue.500" />
             Frontend implemented with Sveltekit, outstanding performance
           </ListItem>
           <ListItem>
+            <ListIcon as={FaRegCheckCircle} color="blue.500" />
             Backend: GraphQL API, as a layer on top on already available company
             Restful API
           </ListItem>
-        </UnorderedList>
+        </List>
         <TechItemsRow
           icons={[
             { icon: SiSvelte, label: "Svelte/Sveltekit" },
@@ -89,10 +100,54 @@ const ExperienceSection = () => {
               icon: SiApollographql,
               label: "Apollo GraphQL",
             },
+            { icon: SiGooglecloud, label: "Google Cloud" },
+            { icon: SiPostgresql, label: "Postgresql" },
+          ]}
+        />
+      </ExperienceItem>
+      <ExperienceItem
+        title="3Pillar Global"
+        subtitle="May 2018 - Aug 2020; 100% Remote"
+      >
+        <Text my={1} fontWeight="600">
+          Re making of monolithic web application
+        </Text>
+        <List spacing={2} fontSize="medium" textAlign="justify">
+          <ListItem>
+            <ListIcon as={FaRegCheckCircle} color="blue.500" />
+            Going from RoR monolith to a Static-Site generated App with
+            Next.js(React) & multi-language support
+          </ListItem>
+          <ListItem>
+            <ListIcon as={FaRegCheckCircle} color="blue.500" />
+            Backend was AWS Serverless solution: API gateway, Lambda functions,
+            Step functions
+          </ListItem>
+        </List>
+        <TechItemsRow
+          icons={[
+            { icon: SiAmazonaws, label: "Amazon web services" },
             {
-              icon: SiAwsamplify,
-              label: "AWS amplify",
+              icon: SiNextdotjs,
+              label: "Next.js",
             },
+            {
+              icon: SiTypescript,
+              label: "Typescript",
+            },
+            {
+              icon: SiReact,
+              label: "React",
+            },
+            {
+              icon: SiNodedotjs,
+              label: "NodeJS",
+            },
+            {
+              icon: SiPrisma,
+              label: "Prisma ORM",
+            },
+            { icon: SiPostgresql, label: "Postgresql" },
           ]}
         />
       </ExperienceItem>
