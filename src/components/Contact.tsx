@@ -28,15 +28,6 @@ const Contact = () => {
             /renato1010
           </Link>
         </HStack>
-        {/* <HStack spacing="4">
-          <Icon as={FaLinkedin} fill="blue.500" />
-          <Link
-            href="https://www.linkedin.com/in/renatoperezgt/"
-            color="blue.700"
-          >
-            /in/renatoperezgt/?locale=en_US
-          </Link>
-        </HStack> */}
         <HStack spacing="4">
           <Icon as={GoLocation} fill="blue.500" />
           <Link color="blue.700">Guatemala|US|world</Link>

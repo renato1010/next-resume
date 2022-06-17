@@ -19,7 +19,7 @@ const About = () => {
         teams or simply augmenting staff. I have created complex enterprise
         software from scratch, products like high traffic public websites,
         business management dashboards, virtual agents for contact centers are
-        my thing. My next project will be something in the orbit of: &nbsp;
+        my things. My next project will be something in the orbit of: &nbsp;
         <span style={{ fontWeight: "bold" }}>
           Typescript, React, Svelte, Next.js, Nodejs, Serverless, GraphQL.
         </span>
