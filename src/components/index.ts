@@ -6,3 +6,4 @@ export * from "./Contact";
 export * from "./ExperienceItem";
 export * from "./TechItem";
 export * from "./TechItemRow";
+export * from "./ExperinceSection";
