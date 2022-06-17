@@ -1,0 +1,6 @@
+.title {
+  width:100%;
+}
+.contrastTitle {
+  color: var(--chakra-colors-blue-700);
+}
