@@ -7,3 +7,5 @@ export * from "./ExperienceItem";
 export * from "./TechItem";
 export * from "./TechItemRow";
 export * from "./ExperinceSection";
+export * from "./SkillList";
+export * from "./HeadingSection"

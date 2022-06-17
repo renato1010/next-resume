@@ -7,12 +7,10 @@ import {
   About,
   Contact,
   ExperienceSection,
+  SkillList,
+  HeadingSection,
 } from "@components";
-import {
-  VStack,
-  Flex,
-  Heading,
-} from "@chakra-ui/react";
+import { VStack, Flex } from "@chakra-ui/react";
 
 const Home: NextPage = () => {
   const [showContent, setShowContent] = useState(false);
@@ -39,20 +37,12 @@ const Home: NextPage = () => {
           <VStack w="35%" h="100%">
             <DevPic />
             <Contact />
+            <SkillList />
           </VStack>
           <VStack w="65%" h="100%" px="3">
             <Title />
             <About />
-            <Heading
-              w="100%"
-              as="h3"
-              fontSize="24px"
-              fontWeight="medium"
-              mb="1"
-              textAlign="left"
-            >
-              Work Experience
-            </Heading>
+            <HeadingSection title="work experience" />
             <ExperienceSection />
           </VStack>
         </Flex>
