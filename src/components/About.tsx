@@ -9,17 +9,20 @@ const About = () => {
       <Text
         mt="2"
         fontWeight="200"
-        fontSize="medium"
-        lineHeight="normal"
+        fontSize="15px"
+        lineHeight="1.2"
         textAlign="justify"
       >
-        In 14 years of experience as a full stack developer, I have accumulated
-        extensive experience in all stages of the software development
-        lifecycle, being in charge of the whole product codebase, leading dev
-        teams or simply augmenting staff. I have created complex enterprise
-        software from scratch, products like high traffic public websites,
-        business management dashboards, virtual agents for contact centers are
-        my things. My next project will be something in the orbit of: &nbsp;
+        Seasoned developer with over a decade of experience as a web developer,
+        during that time acquired experience in all stages of the software
+        development lifecycle; held roles ranging from being solely responsible
+        for the code base for a small project, to technical lead of a
+        cross-functional team.
+        <br /> I know the nuances of building complex enterprise software from
+        scratch; products such as high-traffic public websites, business
+        management dashboards, shifting from legacy to cutting-edge software
+        architectures is my thing. My next project will be something in the
+        orbit of: &nbsp;
         <span style={{ fontWeight: "bold" }}>
           Typescript, React, Svelte, Next.js, Nodejs, Serverless, GraphQL.
         </span>
