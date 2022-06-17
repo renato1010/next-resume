@@ -1,5 +1,5 @@
 import { Box, Heading, HStack, Icon, Link } from "@chakra-ui/react";
-import { FaRegEnvelope, FaLinkedin } from "react-icons/fa";
+import { FaRegEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
 import { GoLocation } from "react-icons/go";
 
@@ -19,21 +19,27 @@ const Contact = () => {
         <HStack spacing="4">
           <Icon as={TbWorld} fill="blue.500" />
           <Link href="https://www.renatoperez.dev" color="blue.700">
-            renatoperez.dev
+            www.renatoperez.dev
           </Link>
         </HStack>
         <HStack spacing="4">
+          <Icon as={FaGithub} fill="blue.500" />
+          <Link href="https://github.com/renato1010" color="blue.700">
+            /renato1010
+          </Link>
+        </HStack>
+        {/* <HStack spacing="4">
           <Icon as={FaLinkedin} fill="blue.500" />
           <Link
             href="https://www.linkedin.com/in/renatoperezgt/"
             color="blue.700"
           >
-            /renatoperezgt
+            /in/renatoperezgt/?locale=en_US
           </Link>
-        </HStack>
+        </HStack> */}
         <HStack spacing="4">
           <Icon as={GoLocation} fill="blue.500" />
-          <Link color="blue.700">Guatemala/US/world</Link>
+          <Link color="blue.700">Guatemala|US|world</Link>
         </HStack>
       </Box>
     </Box>
