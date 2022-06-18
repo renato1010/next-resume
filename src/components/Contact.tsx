@@ -9,7 +9,7 @@ const Contact = () => {
       <Heading as="h3" fontSize="24px" fontWeight="medium">
         Contact
       </Heading>
-      <Box w="100%" p="4">
+      <Box w="100%">
         <HStack spacing="4">
           <Icon as={FaRegEnvelope} fill="blue.500" />
           <Link href="mailto:contact@renatoperez.dev" color="blue.700">

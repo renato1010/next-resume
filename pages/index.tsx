@@ -28,7 +28,7 @@ const Home: NextPage = () => {
     }).formatToParts(new Date());
     const month = parts.filter((p) => p.type === "month").map((p) => p.value);
     const year = parts.filter((p) => p.type === "year").map((p) => p.value);
-    return `resume_renato_perez_fullstack_dev_${month}-${year}`;
+    return `resume_renato_perez_fullstack_dev_${month}-${year}.pdf`;
   }, []);
 
   if (!showContent) {
