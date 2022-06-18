@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { NextPage } from "next";
 import {
   Page,
@@ -21,16 +21,22 @@ const Home: NextPage = () => {
       setShowContent(false);
     };
   }, []);
+  const filename = useMemo(() => {
+    const parts = new Intl.DateTimeFormat("en-US", {
+      year: "numeric",
+      month: "long",
+    }).formatToParts(new Date());
+    const month = parts.filter((p) => p.type === "month").map((p) => p.value);
+    const year = parts.filter((p) => p.type === "year").map((p) => p.value);
+    return `resume_renato_perez_fullstack_dev_${month}-${year}`;
+  }, []);
+
   if (!showContent) {
     return null;
   }
   return (
     <>
-      <a
-        href="/api/pdf"
-        download="generated_resume.pdf"
-        className="downloadBtn"
-      >
+      <a href="/api/pdf" download={filename} className="downloadBtn">
         Download PDF
       </a>
       <Page>

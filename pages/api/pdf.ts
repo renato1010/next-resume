@@ -1,7 +1,7 @@
 import { NextApiHandler } from "next";
 import { launch } from "puppeteer";
 
-const handler: NextApiHandler = async (req, res) => {
+const handler: NextApiHandler = async (_, res) => {
   const browser = await launch();
   const page = await browser.newPage();
 

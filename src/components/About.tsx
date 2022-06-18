@@ -22,7 +22,7 @@ const About = () => {
         scratch; products such as high-traffic public websites, business
         management dashboards, shifting from legacy to cutting-edge software
         architectures is my thing. My next project will be something in the
-        orbit of: &nbsp;
+        neighborhood of: &nbsp;
         <span style={{ fontWeight: "bold" }}>
           Typescript, React, Svelte, Next.js, Nodejs, Serverless, GraphQL.
         </span>
