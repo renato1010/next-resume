@@ -1,6 +1,6 @@
-import { Box, Heading, HStack, Icon, Link } from "@chakra-ui/react";
+import { Box, Heading, HStack, Icon, Link, Text } from "@chakra-ui/react";
 import { FaRegEnvelope, FaGithub } from "react-icons/fa";
-import { TbWorld } from "react-icons/tb";
+import { TbWorld, TbExternalLink } from "react-icons/tb";
 import { GoLocation } from "react-icons/go";
 
 const Contact = () => {
@@ -19,13 +19,25 @@ const Contact = () => {
         <HStack spacing="4">
           <Icon as={TbWorld} fill="blue.500" />
           <Link href="https://www.renatoperez.dev" color="blue.700">
-            www.renatoperez.dev
+            <HStack align="center">
+              <Text>www.renatoperez.dev</Text>
+              <Icon
+                style={{ marginLeft: "1px", marginTop: "-2px" }}
+                as={TbExternalLink}
+              />
+            </HStack>
           </Link>
         </HStack>
         <HStack spacing="4">
           <Icon as={FaGithub} fill="blue.500" />
           <Link href="https://github.com/renato1010" color="blue.700">
-            /renato1010
+            <HStack align="center">
+              <Text>/renato1010</Text>
+              <Icon
+                style={{ marginLeft: "1px", marginTop: "-2px" }}
+                as={TbExternalLink}
+              />
+            </HStack>
           </Link>
         </HStack>
         <HStack spacing="4">
