@@ -19,7 +19,7 @@ import { FaRegCheckCircle } from "react-icons/fa";
 
 const ExperienceSection = () => {
   return (
-    <VStack spacing="3">
+    <VStack spacing="4">
       <ExperienceItem
         title="HCL Tech, US-Colombia - Contractor"
         subtitle="June 2021 - May 2022; 100% Remote from Guatemala"
@@ -34,7 +34,7 @@ const ExperienceSection = () => {
             component of a complete solution with Google Contact Center AI.
           </ListItem>
           <ListItem>
-          <ListIcon as={TbNumber2} color="blue.500" w="14px" />
+            <ListIcon as={TbNumber2} color="blue.500" w="14px" />
             Develop an API as a proxy to the company services in order to
             provide dynamic responses or save info supplied by user.
           </ListItem>
@@ -122,8 +122,8 @@ const ExperienceSection = () => {
           </ListItem>
           <ListItem>
             <ListIcon as={FaRegCheckCircle} color="blue.500" w="14px" />
-            Backend was AWS Serverless solution: API gateway, Lambda functions,
-            Step functions
+            Backend was AWS Serverless solution: API gateway, Lambda & Step
+            functions
           </ListItem>
         </List>
         <TechItemsRow

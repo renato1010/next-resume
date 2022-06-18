@@ -5,7 +5,7 @@ import { GoLocation } from "react-icons/go";
 
 const Contact = () => {
   return (
-    <Box w="100%">
+    <Box w="100%" p="2">
       <Heading as="h3" fontSize="24px" fontWeight="medium">
         Contact
       </Heading>

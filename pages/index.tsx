@@ -9,6 +9,7 @@ import {
   ExperienceSection,
   SkillList,
   HeadingSection,
+  LanguagesSection,
 } from "@components";
 import { VStack, Flex } from "@chakra-ui/react";
 
@@ -34,10 +35,11 @@ const Home: NextPage = () => {
       </a>
       <Page>
         <Flex w="100%" h="100%" align="stretch" bg="#F1F2F5">
-          <VStack w="35%" h="100%">
+          <VStack w="35%" h="100%" spacing={4}>
             <DevPic />
             <Contact />
             <SkillList />
+            <LanguagesSection />
           </VStack>
           <VStack w="65%" h="100%" px="3">
             <Title />

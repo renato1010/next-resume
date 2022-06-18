@@ -1,4 +1,4 @@
-import { HStack, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, HStack, SimpleGrid, Text } from "@chakra-ui/react";
 import {
   SiGooglecloud,
   SiTypescript,
@@ -47,7 +47,7 @@ const skills: Omit<TechItemProps, "width" | "height">[] = [
 ];
 const SkillList = () => {
   return (
-    <>
+    <Box w="100%" p="2">
       <HeadingSection title="skill set" />
       <SimpleGrid columns={2} spacing={4} w="100%">
         {skills.map((skill) => (
@@ -64,7 +64,7 @@ const SkillList = () => {
           </HStack>
         ))}
       </SimpleGrid>
-    </>
+    </Box>
   );
 };
 

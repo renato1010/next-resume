@@ -9,3 +9,4 @@ export * from "./TechItemRow";
 export * from "./ExperinceSection";
 export * from "./SkillList";
 export * from "./HeadingSection"
+export * from "./LanguagesSection"
