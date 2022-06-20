@@ -2,7 +2,6 @@ import { ListItem, Text, ListIcon, List, VStack } from "@chakra-ui/react";
 import { ExperienceItem, TechItemsRow } from "@components";
 import {
   SiGooglecloud,
-  SiDialogflow,
   SiTypescript,
   SiNodedotjs,
   SiSvelte,
@@ -14,56 +13,16 @@ import {
   SiReact,
   SiPrisma,
 } from "react-icons/si";
-import { TbApi, TbNumber1, TbNumber2 } from "react-icons/tb";
+import { TbNumber1, TbNumber2 } from "react-icons/tb";
 import { FaRegCheckCircle } from "react-icons/fa";
+import { Apigee } from "@icons";
 
 const ExperienceSection = () => {
   return (
     <VStack spacing="4">
       <ExperienceItem
-        title="HCL Tech, US-Colombia - Contractor"
-        subtitle="June 2021 - May 2022; 100% Remote from Guatemala"
-      >
-        <Text my={1} fontSize="14px" fontWeight="600">
-          Dialogflow CX virtual agent (2 phases):
-        </Text>
-        <List spacing={2} fontSize="14px" textAlign="justify">
-          <ListItem>
-            <ListIcon as={TbNumber1} color="blue.500" w="14px" />
-            Design and develop the Google DialogFlow CX virtual agent, as a
-            component of a complete solution with Google Contact Center AI.
-          </ListItem>
-          <ListItem>
-            <ListIcon as={TbNumber2} color="blue.500" w="14px" />
-            Develop an API as a proxy to the company services in order to
-            provide dynamic responses or save info supplied by user.
-          </ListItem>
-        </List>
-        <TechItemsRow
-          icons={[
-            { icon: SiGooglecloud, label: "Google Cloud" },
-            {
-              icon: SiDialogflow,
-              label: "ialogFlow CX",
-            },
-            {
-              icon: SiTypescript,
-              label: "Typescript",
-            },
-            {
-              icon: SiNodedotjs,
-              label: "NodeJS",
-            },
-            {
-              icon: TbApi,
-              label: "API Gateway",
-            },
-          ]}
-        />
-      </ExperienceItem>
-      <ExperienceItem
-        title="Sole Farms, Miami Fl - Sub contractor"
-        subtitle="Oct 2020 - May 2021; 100% Remote from Guatemala"
+        title="Sole Farms, Miami Fl"
+        subtitle="May 2022 - Present; Full-Time Remote"
       >
         <Text my={1} fontSize="14px" fontWeight="600">
           Admin Dashboard
@@ -108,8 +67,8 @@ const ExperienceSection = () => {
         />
       </ExperienceItem>
       <ExperienceItem
-        title="3Pillar Global"
-        subtitle="May 2018 - Aug 2020; 100% Remote"
+        title="PickFu"
+        subtitle="Sept 2021 - Apr 2022; 100% Remote"
       >
         <Text my={1} fontWeight="600">
           Re making of monolithic web application
@@ -150,6 +109,52 @@ const ExperienceSection = () => {
               label: "Prisma ORM",
             },
             { icon: SiPostgresql, label: "Postgresql" },
+          ]}
+        />
+      </ExperienceItem>
+      <ExperienceItem
+        title="3Pillar Global"
+        subtitle="Jan 2020 - Jan 2022; 100% Remote from Guatemala"
+      >
+        <Text my={1} fontSize="14px" fontWeight="600">
+          Travel App
+        </Text>
+        <List spacing={2} fontSize="14px" textAlign="justify">
+          <ListItem>
+            <ListIcon as={TbNumber1} color="blue.500" w="14px" />
+            React(web) and React Native(iOS/Android) App
+          </ListItem>
+          <ListItem>
+            <ListIcon as={TbNumber2} color="blue.500" w="14px" />
+            Google Apigee, API backend; API ecosystem focused on multiple
+            channels and business models serving valuable data and services as
+            APIs for partners and developers alike, generating new revenue
+            streams
+          </ListItem>
+        </List>
+        <TechItemsRow
+          icons={[
+            { icon: SiGooglecloud, label: "Google Cloud" },
+            {
+              icon: Apigee,
+              label: "Google Apigee",
+            },
+            {
+              icon: SiTypescript,
+              label: "Typescript",
+            },
+            {
+              icon: SiReact,
+              label: "React",
+            },
+            {
+              icon: SiNextdotjs,
+              label: "NextJS",
+            },
+            {
+              icon: SiNodedotjs,
+              label: "NodeJS",
+            },
           ]}
         />
       </ExperienceItem>

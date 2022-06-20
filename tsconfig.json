@@ -17,7 +17,7 @@
     "baseUrl": ".",
     "paths": {
       "@components": ["src/components"],
-      "@icons/*": ["src/components/vector-icons/*"],
+      "@icons": ["src/components/vector-icons"],
       "@styles/*": ["styles/*"]
     }
   },
