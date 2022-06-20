@@ -68,7 +68,7 @@ const ExperienceSection = () => {
       </ExperienceItem>
       <ExperienceItem
         title="PickFu"
-        subtitle="Sept 2021 - Apr 2022; 100% Remote"
+        subtitle="Sept 2021 - Apr 2022; Full-Time Remote"
       >
         <Text my={1} fontWeight="600">
           Re making of monolithic web application
@@ -114,7 +114,7 @@ const ExperienceSection = () => {
       </ExperienceItem>
       <ExperienceItem
         title="3Pillar Global"
-        subtitle="Jan 2020 - Jan 2022; 100% Remote from Guatemala"
+        subtitle="Jan 2020 - Jan 2022; Contractor"
       >
         <Text my={1} fontSize="14px" fontWeight="600">
           Travel App
@@ -122,11 +122,11 @@ const ExperienceSection = () => {
         <List spacing={2} fontSize="14px" textAlign="justify">
           <ListItem>
             <ListIcon as={TbNumber1} color="blue.500" w="14px" />
-            React(web) and React Native(iOS/Android) App
+            Client: React(web) and React Native(iOS/Android) App
           </ListItem>
           <ListItem>
             <ListIcon as={TbNumber2} color="blue.500" w="14px" />
-            Google Apigee, API backend; API ecosystem focused on multiple
+            Backend: Google Apigee, API backend; API ecosystem focused on multiple
             channels and business models serving valuable data and services as
             APIs for partners and developers alike, generating new revenue
             streams
