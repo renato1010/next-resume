@@ -22,7 +22,7 @@ const ExperienceSection = () => {
     <VStack spacing="4">
       <ExperienceItem
         title="Sole Farms, Miami Fl"
-        subtitle="May 2022 - Present; Full-Time Remote"
+        subtitle="May 2022 - Present; Contractor"
       >
         <Text my={1} fontSize="14px" fontWeight="600">
           Admin Dashboard
@@ -114,7 +114,7 @@ const ExperienceSection = () => {
       </ExperienceItem>
       <ExperienceItem
         title="3Pillar Global"
-        subtitle="Jan 2020 - Jan 2022; Contractor"
+        subtitle="Jan 2020 - Jan 2022; Full-Time Remote"
       >
         <Text my={1} fontSize="14px" fontWeight="600">
           Travel App
@@ -126,10 +126,10 @@ const ExperienceSection = () => {
           </ListItem>
           <ListItem>
             <ListIcon as={TbNumber2} color="blue.500" w="14px" />
-            Backend: Google Apigee, API backend; API ecosystem focused on multiple
-            channels and business models serving valuable data and services as
-            APIs for partners and developers alike, generating new revenue
-            streams
+            Backend: Google Apigee, API backend; API ecosystem focused on
+            multiple channels and business models serving valuable data and
+            services as APIs for partners and developers alike, generating new
+            revenue streams
           </ListItem>
         </List>
         <TechItemsRow
