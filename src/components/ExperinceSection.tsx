@@ -34,7 +34,8 @@ const ExperienceSection = () => {
           </ListItem>
           <ListItem>
             <ListIcon as={FaRegCheckCircle} color="blue.500" w="14px" />
-            Frontend implemented with Sveltekit, outstanding performance
+            Frontend with Sveltekit, outstanding performance: 1.5s FCP(75th
+            Percentile/page loads)
           </ListItem>
           <ListItem>
             <ListIcon as={FaRegCheckCircle} color="blue.500" w="14px" />
