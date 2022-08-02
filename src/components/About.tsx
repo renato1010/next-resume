@@ -21,7 +21,7 @@ const About = () => {
         <br /> I know the nuances of building complex enterprise software from
         scratch; products such as high-traffic public websites, business
         management dashboards, shifting from legacy to cutting-edge software
-        architectures is my thing. My next project will be something in the
+        architectures is my thing. My next project probably be something in the
         neighborhood of: &nbsp;
         <span style={{ fontWeight: "bold" }}>
           Typescript, React, Svelte, Next.js, Nodejs, Serverless, GraphQL.

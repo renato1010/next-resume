@@ -21,8 +21,8 @@ const ExperienceSection = () => {
   return (
     <VStack spacing="4">
       <ExperienceItem
-        title="Sole Farms, Miami Fl"
-        subtitle="May 2022 - Present; Contractor"
+        title="Sole Farms, FLA US"
+        subtitle="May 2022 - July 2022; Contractor"
       >
         <Text my={1} fontSize="14px" fontWeight="600">
           Admin Dashboard
@@ -40,8 +40,8 @@ const ExperienceSection = () => {
           </ListItem>
           <ListItem>
             <ListIcon as={FaRegCheckCircle} color="blue.500" w="14px" />
-            Backend: GraphQL API, as a layer on top on already available company
-            Restful API
+            Backend: GraphQL API, schema implemented as small, reusable
+            easy-to-test modules(GraphQL Modules)
           </ListItem>
         </List>
         <TechItemsRow
@@ -69,7 +69,7 @@ const ExperienceSection = () => {
         />
       </ExperienceItem>
       <ExperienceItem
-        title="PickFu"
+        title="PickFu, CA US"
         subtitle="Sept 2021 - Apr 2022; Full-Time Remote"
       >
         <Text my={1} fontWeight="600">
@@ -115,7 +115,7 @@ const ExperienceSection = () => {
         />
       </ExperienceItem>
       <ExperienceItem
-        title="3Pillar Global"
+        title="3Pillar Global, Costa Rica"
         subtitle="Jan 2020 - Jan 2022; Full-Time Remote"
       >
         <Text my={1} fontSize="14px" fontWeight="600">
