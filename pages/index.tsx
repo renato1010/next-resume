@@ -36,7 +36,7 @@ const Home: NextPage = () => {
   }
   return (
     <>
-      <a href="/api/pdf" download={filename} className="downloadBtn">
+      <a href="/api/pdf/home" download={filename} className="downloadBtn">
         Download PDF
       </a>
       <Page>

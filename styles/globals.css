@@ -1,5 +1,6 @@
 html {
   -webkit-print-color-adjust: exact; /* This makes sure that the PDF is rendered exactly like our layout. */
+  print-color-adjust: exact;
 }
 html,
 body {
