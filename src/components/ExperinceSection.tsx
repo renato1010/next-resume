@@ -116,7 +116,7 @@ const ExperienceSection = () => {
       </ExperienceItem>
       <ExperienceItem
         title="3Pillar Global, Costa Rica"
-        subtitle="Jan 2020 - Jan 2022; Full-Time Remote"
+        subtitle="Jan 2019 - Jan 2021; Full-Time Remote"
       >
         <Text my={1} fontSize="14px" fontWeight="600">
           Travel App
