@@ -1,6 +1,7 @@
 import { type IconType } from "react-icons";
+import { SiNodedotjs } from "react-icons/si";
 
-export type CompanyKeys = "soleFarms" | "pickfu" | "pillar";
+export type CompanyKeys = "soleFarms" | "pickfu" | "pillar" | "bairesDev" | "letulet" | "foodologist";
 type TechIconItem = {
   icon: IconType;
   label: string;
@@ -90,9 +91,76 @@ async function getPillarIcons(): Promise<TechIconList> {
     { icon: SiMysql, label: "MySQL" },
   ];
 }
+async function getBairesIcons(): Promise<TechIconList> {
+  const { SiLinux, SiJavascript, SiTypescript, SiFirebase, SiNodedotjs, SiAngular } = await import(
+    "react-icons/si"
+  );
+  return [
+    {
+      icon: SiLinux,
+      label: "Linux Server",
+    },
+    { icon: SiJavascript, label: "Javascript" },
+    {
+      icon: SiTypescript,
+      label: "Typescript",
+    },
+    { icon: SiFirebase, label: "Google Cloud Platform" },
+    {
+      icon: SiNodedotjs,
+      label: "NodeJS",
+    },
+    { icon: SiAngular, label: "Angular Framework" },
+  ];
+}
+
+async function getLetuletIcons(): Promise<TechIconList> {
+  const { SiAngular, SiAmazonaws, SiJavascript, SiTypescript, SiJava } = await import("react-icons/si");
+  return [
+    { icon: SiAngular, label: "Angular Framework" },
+    {
+      icon: SiAmazonaws,
+      label: "Amazon web services",
+    },
+    { icon: SiJavascript, label: "Javascript" },
+    {
+      icon: SiTypescript,
+      label: "Typescript",
+    },
+    {
+      icon: SiJava,
+      label: "Java",
+    },
+  ];
+}
+async function getFoodologistIcons(): Promise<TechIconList> {
+  const { SiAmazonaws, SiNodedotjs, SiNpm, SiJavascript, SiLaravel, SiPython } = await import(
+    "react-icons/si"
+  );
+  return [
+    {
+      icon: SiAmazonaws,
+      label: "Amazon web services",
+    },
+    { icon: SiNodedotjs, label: "NodeJS" },
+    { icon: SiNpm, label: "NPM" },
+    { icon: SiJavascript, label: "Javascript" },
+    {
+      icon: SiLaravel,
+      label: "Laravel",
+    },
+    {
+      icon: SiPython,
+      label: "Python",
+    },
+  ];
+}
 
 export const companyToTechListMap = new Map<CompanyKeys, () => Promise<TechIconList>>([
   ["soleFarms", getSoleFarmIcons],
   ["pickfu", getPickfuIcons],
   ["pillar", getPillarIcons],
+  ["bairesDev", getBairesIcons],
+  ["letulet", getLetuletIcons],
+  ["foodologist", getFoodologistIcons],
 ]);

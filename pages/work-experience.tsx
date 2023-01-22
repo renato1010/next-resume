@@ -1,5 +1,6 @@
 import { useState, useEffect, useMemo } from "react";
 import { NextPage } from "next";
+import { Text } from "@chakra-ui/react";
 import { ExperienceCard, Experience } from "@components";
 
 const WorkExperience: NextPage = () => {
@@ -30,9 +31,10 @@ const WorkExperience: NextPage = () => {
         Download 2nd page PDF
       </a>
       <Experience>
-        <ExperienceCard companyKey="soleFarms" />
-        <ExperienceCard companyKey="pickfu" />
-        <ExperienceCard companyKey="pillar" />
+        <Text fontSize="2xl">Extensive work history</Text>
+        <ExperienceCard companyKey="bairesDev" />
+        <ExperienceCard companyKey="letulet" />
+        <ExperienceCard companyKey="foodologist" />
       </Experience>
     </>
   );
