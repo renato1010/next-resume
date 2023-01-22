@@ -20,10 +20,7 @@ import { Apigee } from "@icons";
 const ExperienceSection = () => {
   return (
     <VStack spacing="4">
-      <ExperienceItem
-        title="Sole Farms, FLA US"
-        subtitle="May 2022 - July 2022; Contractor"
-      >
+      <ExperienceItem title="Sole Farms, FLA US" subtitle="May 2022 - Dec 2022; Contractor">
         <Text my={1} fontSize="14px" fontWeight="600">
           Admin Dashboard
         </Text>
@@ -35,13 +32,11 @@ const ExperienceSection = () => {
           <ListItem>
             <ListIcon as={FaRegCheckCircle} color="blue.500" w="14px" />
             Frontend with Sveltekit, outstanding performance:{" "}
-            <span style={{ fontWeight: "600" }}>1.5s FCP</span>(75th
-            Percentile/page loads)
+            <span style={{ fontWeight: "600" }}>1.5s FCP</span>(75th Percentile/page loads)
           </ListItem>
           <ListItem>
             <ListIcon as={FaRegCheckCircle} color="blue.500" w="14px" />
-            Backend: GraphQL API, schema implemented as small, reusable
-            easy-to-test modules(GraphQL Modules)
+            Backend: GraphQL API, schema implemented as small, reusable easy-to-test modules(GraphQL Modules)
           </ListItem>
         </List>
         <TechItemsRow
@@ -68,23 +63,19 @@ const ExperienceSection = () => {
           ]}
         />
       </ExperienceItem>
-      <ExperienceItem
-        title="PickFu, CA US"
-        subtitle="Sept 2021 - Apr 2022; Full-Time Remote"
-      >
+      <ExperienceItem title="PickFu, CA US" subtitle="Sep 2021 - May 2022; Full-Time Remote">
         <Text my={1} fontWeight="600">
           Re making of monolithic web application
         </Text>
         <List spacing={2} fontSize="14px" textAlign="justify">
           <ListItem>
             <ListIcon as={FaRegCheckCircle} color="blue.500" w="14px" />
-            Going from RoR monolith to a Static-Site generated App with
-            Next.js(React) & multi-language support
+            Going from RoR monolith to a Static-Site generated App with Next.js(React) & multi-language
+            support
           </ListItem>
           <ListItem>
             <ListIcon as={FaRegCheckCircle} color="blue.500" w="14px" />
-            Backend was AWS Serverless solution: API gateway, Lambda & Step
-            functions
+            Backend was AWS Serverless solution: API gateway, Lambda & Step functions
           </ListItem>
         </List>
         <TechItemsRow
@@ -114,10 +105,7 @@ const ExperienceSection = () => {
           ]}
         />
       </ExperienceItem>
-      <ExperienceItem
-        title="3Pillar Global, Costa Rica"
-        subtitle="Jan 2019 - Jan 2021; Full-Time Remote"
-      >
+      <ExperienceItem title="3Pillar Global, Costa Rica" subtitle="Jan 2020 - Apr 2021; Full-Time Remote">
         <Text my={1} fontSize="14px" fontWeight="600">
           Travel App
         </Text>
@@ -128,10 +116,9 @@ const ExperienceSection = () => {
           </ListItem>
           <ListItem>
             <ListIcon as={TbNumber2} color="blue.500" w="14px" />
-            Backend: Google Apigee, API backend; API ecosystem focused on
-            multiple channels and business models serving valuable data and
-            services as APIs for partners and developers alike, generating new
-            revenue streams
+            Backend: Google Apigee, API backend; API ecosystem focused on multiple channels and business
+            models serving valuable data and services as APIs for partners and developers alike, generating
+            new revenue streams
           </ListItem>
         </List>
         <TechItemsRow
