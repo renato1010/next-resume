@@ -18,7 +18,8 @@
     "paths": {
       "@components": ["src/components"],
       "@icons": ["src/components/vector-icons"],
-      "@styles/*": ["styles/*"]
+      "@styles/*": ["styles/*"],
+      "@utils/*": ["utils/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

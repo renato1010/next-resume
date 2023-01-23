@@ -8,5 +8,7 @@ export * from "./TechItem";
 export * from "./TechItemRow";
 export * from "./ExperinceSection";
 export * from "./SkillList";
-export * from "./HeadingSection"
-export * from "./LanguagesSection"
+export * from "./HeadingSection";
+export * from "./LanguagesSection";
+export * from "./WorkExperience";
+export * from "./ExperienceCard";
