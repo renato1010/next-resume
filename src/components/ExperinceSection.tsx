@@ -77,11 +77,11 @@ const ExperienceSection = () => {
         </Text>
         <List spacing={2} fontSize="14px" textAlign="justify">
           <ListItem>
-            <ListIcon as={TbNumber1} color="blue.500" w="14px" />
+            <ListIcon as={FaRegCheckCircle} color="blue.500" w="14px" />
             Client: React(web) and React Native(iOS/Android) App
           </ListItem>
           <ListItem>
-            <ListIcon as={TbNumber2} color="blue.500" w="14px" />
+            <ListIcon as={FaRegCheckCircle} color="blue.500" w="14px" />
             Backend: Google Apigee, API backend; API ecosystem focused on multiple channels and business
             models serving valuable data and services as APIs for partners and developers alike, generating
             new revenue streams
