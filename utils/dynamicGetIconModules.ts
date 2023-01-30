@@ -1,7 +1,13 @@
 import { type IconType } from "react-icons";
-import { SiNodedotjs } from "react-icons/si";
 
-export type CompanyKeys = "soleFarms" | "pickfu" | "pillar" | "bairesDev" | "letulet" | "foodologist";
+export type CompanyKeys =
+  | "soleFarms"
+  | "pickfu"
+  | "pillar"
+  | "bairesDev"
+  | "letulet"
+  | "foodologist"
+  | "skillList";
 type TechIconItem = {
   icon: IconType;
   label: string;
@@ -155,6 +161,52 @@ async function getFoodologistIcons(): Promise<TechIconList> {
     },
   ];
 }
+async function getResumeSkillList(): Promise<TechIconList> {
+  const {
+    SiTypescript,
+    SiNodedotjs,
+    SiReact,
+    SiAngular,
+    SiJavascript,
+    SiNextdotjs,
+    SiSvelte,
+    SiGraphql,
+    SiApollographql,
+    SiPrisma,
+    SiPostgresql,
+    SiMongodb,
+    SiGooglecloud,
+    SiAmazonaws,
+    SiLinux,
+    SiDocker,
+    SiTailwindcss,
+    SiCss3,
+    SiHtml5,
+    SiDeno,
+  } = await import("react-icons/si");
+  return [
+    { icon: SiTypescript, label: "Typescript" },
+    { icon: SiJavascript, label: "Javascript" },
+    { icon: SiReact, label: "React" },
+    { icon: SiAngular, label: "Angular" },
+    { icon: SiNodedotjs, label: "NodeJS" },
+    { icon: SiNextdotjs, label: "Next.js" },
+    { icon: SiSvelte, label: "Svelte" },
+    { icon: SiGraphql, label: "GraphQL" },
+    { icon: SiApollographql, label: "Apollo" },
+    { icon: SiPrisma, label: "Prisma ORM" },
+    { icon: SiPostgresql, label: "PostgresQL" },
+    { icon: SiMongodb, label: "MongoDB" },
+    { icon: SiGooglecloud, label: "Google Cloud" },
+    { icon: SiAmazonaws, label: "Amazon Cloud" },
+    { icon: SiLinux, label: "Linux" },
+    { icon: SiDocker, label: "Docker" },
+    { icon: SiTailwindcss, label: "TailwindCSS" },
+    { icon: SiCss3, label: "CSS" },
+    { icon: SiHtml5, label: "HTML" },
+    { icon: SiDeno, label: "Deno" },
+  ];
+}
 
 export const companyToTechListMap = new Map<CompanyKeys, () => Promise<TechIconList>>([
   ["soleFarms", getSoleFarmIcons],
@@ -163,4 +215,5 @@ export const companyToTechListMap = new Map<CompanyKeys, () => Promise<TechIconL
   ["bairesDev", getBairesIcons],
   ["letulet", getLetuletIcons],
   ["foodologist", getFoodologistIcons],
+  ["skillList", getResumeSkillList],
 ]);
