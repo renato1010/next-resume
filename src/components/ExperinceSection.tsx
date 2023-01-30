@@ -37,7 +37,7 @@ const ExperienceSection = () => {
             {achievements.map((line) => (
               <ListItem key={line}>
                 <ListIcon as={FaRegCheckCircle} color="blue.500" w="14px" />
-                {line}
+                <Text display="inline" dangerouslySetInnerHTML={{ __html: line }} />
               </ListItem>
             ))}
           </List>
