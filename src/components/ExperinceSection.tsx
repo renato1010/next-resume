@@ -20,7 +20,11 @@ const ExperienceSection = () => {
 
   return (
     <VStack spacing="4">
-      <ExperienceItem title="Sole Farms, FLA US" subtitle="May 2022 - Dec 2022; Contractor">
+      <ExperienceItem
+        title="Sole Farms, FLA US"
+        passedShadow="base"
+        subtitle="May 2022 - Dec 2022; Contractor"
+      >
         <Text my={1} fontSize="14px" fontWeight="600">
           Admin Dashboard
         </Text>
@@ -62,7 +66,11 @@ const ExperienceSection = () => {
         </List>
         <TechItemsRow icons={pickfuList} />
       </ExperienceItem>
-      <ExperienceItem title="3Pillar Global, Costa Rica" subtitle="Jan 2020 - Apr 2021; Full-Time Remote">
+      <ExperienceItem
+        title="3Pillar Global, Costa Rica"
+        passedShadow="base"
+        subtitle="Jan 2020 - Apr 2021; Full-Time Remote"
+      >
         <Text my={1} fontSize="14px" fontWeight="600">
           Travel App
         </Text>
