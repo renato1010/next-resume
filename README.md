@@ -2,33 +2,110 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+Project uses [Chakra UI](https://chakra-ui.com/) mostly for layout
+Nice tech icons comes from [react-icons/si](https://simpleicons.org/) mostly
+
+## Data
+
+Data info is located at: `utils/data/renato-resume-data.json` that conveniently can be  
+imported as "@utils/data/renato-resume-data.json" my data(renato-resume-data.json) is ignored
+
+## Render
+
+You only need to render:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+After that you go to: `http://localhost:3000/`
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+And will see the render for your resume, at the top left it's this: `Download PDF` kinda of button  
+and if click it you'll download a pdf version for the rendered page.
+In my case I got something like:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+<img src="https://losormorpino-public-media.s3.us-east-2.amazonaws.com/yh00t59.jpg" width="600" >
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+The json file has this shape:
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```json
+{
+  "profile": {
+    "header": {
+      "name": "Renato Perez",
+      "title": "Full-Stack Engineer"
+    },
+    "avatar": "https://losormorpino-public-media.s3.us-east-2.amazonaws.com/7d00mq1.jpg",
+    "contact": {
+      "email": "contact@renatoperez.dev",
+      "website": { "text": "www.renatoperez.dev", "href": "https://www.renatoperez.dev/" },
+      "github": {
+        "text": "/renato1010",
+        "href": "https://github.com/renato1010"
+      },
+      "location": "Guatemala|World"
+    }
+  },
+  "work-experience": {
+    "header": "Work Experience",
+    "projects": {
+      "latestJob": {
+        "title": "project title",
+        "subTitle": "May 2022 - Dec 2022; Contractor",
+        "projectName": "Admin Dashboard",
+        "achievements": [
+          "Supply chain management dashboard; actions and <b>data visualization</b>, <b>design-system automated pipeline</b>",
+          "Frontend with Sveltekit, outstanding performance <b>LCP=~ 2.1 heaviest page</b>",
+          "Backend: GraphQL API, schema implemented as small, reusable easy-to-test <b>modules(GraphQL Modules)</b>"
+        ]
+      },
+      "PreviousJob1": {
+        "title": "project/product title",
+        "subTitle": "Sept 2021 - Apr 2022; Full-Time Remote",
+        "projectName": "Revamp of monolithic web application",
+        "achievements": [
+          "Going from RoR monolith to a SSG/ISR/SSR App with <b>Next.js & multi-language support, middlewares @ Edge Network</b>",
+          "Backend <b>AWS Serverless auto-scaling full observability</b>: <b>API gateway, Lambda & Step functions, SNS & SQS</b>"
+        ]
+      },
+      "PreviousJob2": {
+        "title": "project/product title",
+        "subTitle": "Jan 2020 - Jan 2021; Full-Time Remote",
+        "projectName": "Travel App",
+        "achievements": [
+          "Client: <b>React</b>(web) and <b>React Native</b>(iOS/Android) App",
+          "Backend: <b>Google Apigee</b>, API backend; API ecosystem focused on multiple channels and business models serving valuable data and services as APIs for partners and developers alike, generating new revenue streams"
+        ]
+      },
+      "PreviousJob3": {
+        "title": "project/product title",
+        "subTitle": "May 2018 - Dec 2020",
+        "projectName": "Javascript/Typescript Engineer",
+        "achievements": [
+          "Project planning and software development for greenfield projects. Staff augmentation for company clients.",
+          "Multiple projects: Angular V8+, Chatbots backend (Node 10), Full Stack web app MEAN Stack"
+        ]
+      },
+      "PreviousJob4": {
+        "title": "project/product title",
+        "subTitle": "Jun 2017 - Feb 2018; Contractor",
+        "projectName": "Home Sharing App",
+        "achievements": [
+          "Product definition, architecture, development, testing, deployment",
+          "Frontend with Angular V2+, integration with Stripe(Multiparty payments); Backend: AWS EC2(Java)"
+        ]
+      },
+      "PreviousJob5": {
+        "title": "project/product title",
+        "subTitle": "Jan2015 - Jan 2017; Contractor/Full-Time",
+        "projectName": "Nutrition API: nutrition data,recipies,ingredients,restaurants,visualizations",
+        "achievements": [
+          "Design, development, testing, deployment and further extension of API's ecosystem",
+          "Cloud infrastructure in AWS, API's in Nodejs/Laravel/Python",
+          "Design, development, testing and deployment of Javascript SDK(npm pkg)"
+        ]
+      }
+    }
+  }
+}
+```
