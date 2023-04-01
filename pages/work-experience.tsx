@@ -32,6 +32,7 @@ const WorkExperience: NextPage = () => {
       </a>
       <Experience>
         <Text fontSize="2xl">Extensive work history</Text>
+        <ExperienceCard companyKey="pillar" />
         <ExperienceCard companyKey="bairesDev" />
         <ExperienceCard companyKey="letulet" />
         <ExperienceCard companyKey="foodologist" />

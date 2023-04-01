@@ -7,10 +7,10 @@ import data from "@utils/data/renato-resume-data.json";
 
 const {
   "work-experience": {
-    projects: { soleFarms, pickfu, pillar },
+    projects: { soleFarms, pickfu, },
   },
 } = data;
-const companyList = [soleFarms, pickfu, pillar];
+const companyList = [soleFarms, pickfu,];
 const ExperienceSection = () => {
   const soleFarmList = useMemo(() => {
     const listFactory = companyToTechListMap.get("soleFarms")!;
@@ -20,12 +20,8 @@ const ExperienceSection = () => {
     const listFactory = companyToTechListMap.get("pickfu")!;
     return listFactory();
   }, []);
-  const pillarList = useMemo(() => {
-    const listFactory = companyToTechListMap.get("pillar")!;
-    return listFactory();
-  }, []);
 
-  const companyIconsList = [soleFarmList, pickfuList, pillarList];
+  const companyIconsList = [soleFarmList, pickfuList];
   return (
     <VStack spacing="4">
       {companyList.map(({ title, subTitle, projectName, achievements }, idx) => (
