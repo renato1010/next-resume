@@ -25,7 +25,7 @@ const ExperienceSection = () => {
   return (
     <VStack spacing="4">
       {companyList.map(({ title, subTitle, projectName, achievements }, idx) => (
-        <ExperienceItem title={title} passedShadow="base" subtitle={subTitle} key={title}>
+        <ExperienceItem title={title} subtitle={subTitle} key={title}>
           <Text my={1} fontSize="14px" textColor="blue.800" textDecoration="underline">
             {projectName}
           </Text>

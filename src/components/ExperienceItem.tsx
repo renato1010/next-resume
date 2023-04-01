@@ -1,20 +1,19 @@
 import { PropsWithChildren } from "react";
 import { Box, Heading } from "@chakra-ui/react";
-import type { BoxProps } from "@chakra-ui/layout";
 
 type ExperienceItemProps = {
   title: string;
   subtitle: string;
-  passedShadow?: BoxProps["boxShadow"];
+  showBorder?: boolean;
 };
 const ExperienceItem = ({
   title,
   subtitle,
+  showBorder = true,
   children,
-  passedShadow,
 }: PropsWithChildren<ExperienceItemProps>) => {
   return (
-    <Box w="100%" pt="4" p="2" boxShadow={passedShadow} lineHeight="normal">
+    <Box w="100%" pt="4" p="2" border={showBorder ? "1px solid #eeeaea" : undefined} lineHeight="normal">
       <Heading as="h4" fontSize="18px" fontWeight="medium" color="blue.500">
         {title}
       </Heading>

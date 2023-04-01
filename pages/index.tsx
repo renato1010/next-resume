@@ -40,7 +40,7 @@ const Home: NextPage = () => {
         Download PDF
       </a>
       <Page>
-        <Flex w="100%" h="100%" align="stretch" bg="#F1F2F5">
+        <Flex w="100%" h="100%" align="stretch" bg="white">
           <VStack w="35%" h="100%" spacing={4}>
             <DevPic />
             <Contact />

@@ -18,8 +18,8 @@ const ExperienceCard = ({ companyKey }: ExperienceCardProps) => {
   const content: Data["work-experience"]["projects"][keyof Projects] =
     data["work-experience"]["projects"][companyKey];
   return (
-    <Box padding="3" boxShadow="none" border="1px solid #D4D4D4" shadow="lg">
-      <VStack w="100%" h="100%" align="stretch" bg="#F1F2F5">
+    <Box padding="3" boxShadow="none" border="1px solid #eeeaea">
+      <VStack w="100%" h="100%" align="stretch" bg="rgb(244, 244, 244,0.4)">
         <Flex>
           <Flex alignItems="center" w={1 / 4}>
             <Text my={0} fontSize="14px" fontWeight="600">
@@ -30,7 +30,7 @@ const ExperienceCard = ({ companyKey }: ExperienceCardProps) => {
             <ExperienceItem
               title={content.title}
               subtitle={content.subTitle}
-              passedShadow={undefined}
+              showBorder={false}
             ></ExperienceItem>
           </Box>
         </Flex>

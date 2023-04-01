@@ -2,7 +2,7 @@ import { Box, Heading, Text } from "@chakra-ui/react";
 
 const About = () => {
   return (
-    <Box w="100%" p="2" boxShadow="base">
+    <Box w="100%" p="2" border="1px solid #eeeaea">
       <Heading as="h3" fontSize="24px" fontWeight="medium">
         About me
       </Heading>

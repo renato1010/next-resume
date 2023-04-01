@@ -7,7 +7,7 @@
      the dimensios and apply those. */
   width: 210mm;
   height: 297mm;
-  padding: 32px;
+  padding: 24px;
   /* optional: Add drop shadow for floating paper effect. */
   /* filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04))
     drop-shadow(0 4px 3px rgb(0 0 0 / 0.1)); */
