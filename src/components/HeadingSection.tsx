@@ -8,7 +8,7 @@ const HeadingSection = ({ title }: HeadingSectionProps) => {
     <Heading
       w="100%"
       as="h3"
-      fontSize="24px"
+      fontSize="20px"
       fontWeight="medium"
       mb="1"
       textAlign="left"
