@@ -8,11 +8,11 @@ const About = () => {
       </Heading>
       <Text mt="2" fontWeight="200" fontSize="15px" lineHeight="1.2" textAlign="justify">
         With over 12 years of web development experience, I have honed my skills across all stages
-        of the software development lifecycle. I've seamlessly transitioned from managing codebases
+        of the software development lifecycle. I&apos;ve seamlessly transitioned from managing codebases
         for small projects to leading cross-functional teams in building complex enterprise
         solutions. My expertise includes developing high-traffic public websites, managing company
         brand assets, and modernizing legacy systems to cutting-edge architectures.
-        <br /> My toolkit is diverse and current, encompassing technologies such as
+        <br /> My toolkit is diverse and current, encompassing technologies such as &nbsp;
         <span style={{ fontWeight: 'bold' }}>
           Typescript, React, Svelte, Next.js, Node.js, Serverless, AWS and Terraform
         </span>
