@@ -7,7 +7,6 @@ const DevPic = () => {
   const {
     profile: { avatar },
   } = data;
-  console.log({ avatar });
   return (
     <Square className={styles.devPic}>
       <div className={styles.picFrame}>

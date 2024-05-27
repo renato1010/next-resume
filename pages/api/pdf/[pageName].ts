@@ -1,15 +1,18 @@
-import { NextApiHandler } from "next";
-import { launch } from "puppeteer";
+import { NextApiHandler } from 'next';
+import { launch } from 'puppeteer';
 
 const handler: NextApiHandler = async (req, res) => {
-  let { pageName } = req.query;
+  let { pageName, plain } = req.query;
   const browser = await launch();
   const page = await browser.newPage();
-  pageName = pageName === "home" ? "" : pageName;
+  pageName = pageName === 'home' ? '' : pageName;
+  const visitUrl = `http://localhost:3000${
+    pageName ? `/${pageName}?plain=${plain}` : `/?plain=${plain}`
+  }`;
 
-  await page.goto(`http://localhost:3000${pageName ? `/${pageName}` : ""}`);
-  await page.emulateMediaType("screen");
-  const pdfBuffer = await page.pdf({ format: "a4" });
+  await page.goto(visitUrl);
+  await page.emulateMediaType('screen');
+  const pdfBuffer = await page.pdf({ format: 'a4' });
   res.send(pdfBuffer);
   await browser.close();
 };
