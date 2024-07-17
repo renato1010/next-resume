@@ -1,13 +1,13 @@
-import { useEffect, useState } from "react";
-import { Box, HStack, SimpleGrid, Text } from "@chakra-ui/react";
-import { HeadingSection, TechItem } from "@components";
-import { companyToTechListMap, type TechIconList } from "@utils/dynamicGetIconModules";
+import { useEffect, useState } from 'react';
+import { Box, HStack, SimpleGrid, Text } from '@chakra-ui/react';
+import { HeadingSection, TechItem } from '@components';
+import { companyToTechListMap, type TechIconList } from '@utils/dynamicGetIconModules';
 
 const SkillList = () => {
   const [skills, setSkills] = useState<TechIconList | undefined>([]);
   useEffect(() => {
     async function getSkills() {
-      const list = await companyToTechListMap.get("skillList")?.();
+      const list = await companyToTechListMap.get('skillList')?.();
       setSkills(list);
     }
     getSkills();

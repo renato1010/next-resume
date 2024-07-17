@@ -21,7 +21,7 @@ const WorkExperience: NextPage = () => {
     }).formatToParts(new Date());
     const month = parts.filter((p) => p.type === 'month').map((p) => p.value);
     const year = parts.filter((p) => p.type === 'year').map((p) => p.value);
-    return `resume_renato_perez_fullstack_dev_${month}-${year}.pdf`;
+    return `resume_renato_perez_fullstack_dev_page2_${month}-${year}.pdf`;
   }, []);
 
   if (!showContent) {
@@ -38,10 +38,9 @@ const WorkExperience: NextPage = () => {
       </a>
       <Experience>
         <Text fontSize="2xl">Extensive work history</Text>
+        <ExperienceCard companyKey="soleFarms" plain={plain === 'true'} />
         <ExperienceCard companyKey="pickfu" plain={plain === 'true'} />
         <ExperienceCard companyKey="pillar" plain={plain === 'true'} />
-        <ExperienceCard companyKey="bairesDev" plain={plain === 'true'} />
-        <ExperienceCard companyKey="letulet" plain={plain === 'true'} />
       </Experience>
     </>
   );

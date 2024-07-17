@@ -1,9 +1,9 @@
 import { NextApiHandler } from 'next';
-import { launch } from 'puppeteer';
+import { launch } from 'puppeteer-core';
 
 const handler: NextApiHandler = async (req, res) => {
   let { pageName, plain } = req.query;
-  const browser = await launch();
+  const browser = await launch({executablePath:'/usr/bin/google-chrome'});
   const page = await browser.newPage();
   pageName = pageName === 'home' ? '' : pageName;
   const visitUrl = `http://localhost:3000${

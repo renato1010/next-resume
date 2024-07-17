@@ -1,6 +1,7 @@
 import { type IconType } from 'react-icons';
 
 export type CompanyKeys =
+  | 'kiutee'
   | 'parkMobile_easyPark'
   | 'soleFarms'
   | 'pickfu'
@@ -15,6 +16,31 @@ type TechIconItem = {
 };
 export type TechIconList = ReadonlyArray<TechIconItem>;
 
+async function getKiuteeIcons(): Promise<TechIconList> {
+  const { SiNextdotjs, SiTailwindcss, SiShopify, SiAmazonaws } = await import('react-icons/si');
+
+  const { LuBrainCircuit } = await import('react-icons/lu');
+
+  return [
+    {
+      icon: SiShopify,
+      label: 'Shopify API'
+    },
+    {
+      icon: SiNextdotjs,
+      label: 'Next.js'
+    },
+    {
+      icon: SiTailwindcss,
+      label: 'Tailwindcss'
+    },
+    {
+      icon: LuBrainCircuit,
+      label: 'Langchain'
+    },
+    { icon: SiAmazonaws, label: 'Amazon web services' }
+  ];
+}
 async function getParkMobileIcons(): Promise<TechIconList> {
   const { SiReact, SiNextdotjs, SiJavascript, SiNodedotjs, SiSentry, SiAmazonaws } = await import(
     'react-icons/si'
@@ -160,9 +186,8 @@ async function getBairesIcons(): Promise<TechIconList> {
 }
 
 async function getLetuletIcons(): Promise<TechIconList> {
-  const { SiAngular, SiAmazonaws, SiJavascript, SiTypescript, SiJava } = await import(
-    'react-icons/si'
-  );
+  const { SiAngular, SiAmazonaws, SiJavascript, SiTypescript } = await import('react-icons/si');
+  const { FaJava } = await import('react-icons/fa');
   return [
     { icon: SiAngular, label: 'Angular Framework' },
     {
@@ -175,7 +200,7 @@ async function getLetuletIcons(): Promise<TechIconList> {
       label: 'Typescript'
     },
     {
-      icon: SiJava,
+      icon: FaJava,
       label: 'Java'
     }
   ];
@@ -207,7 +232,6 @@ async function getResumeSkillList(): Promise<TechIconList> {
     SiTypescript,
     SiNodedotjs,
     SiReact,
-    SiAngular,
     SiJavascript,
     SiNextdotjs,
     SiSvelte,
@@ -225,11 +249,12 @@ async function getResumeSkillList(): Promise<TechIconList> {
     SiHtml5,
     SiTerraform
   } = await import('react-icons/si');
+  const { LangchainLogo } = await import('@icons');
   return [
     { icon: SiTypescript, label: 'Typescript' },
     { icon: SiJavascript, label: 'Javascript' },
     { icon: SiReact, label: 'React' },
-    { icon: SiAngular, label: 'Angular' },
+    { icon: LangchainLogo as IconType, label: 'Langchain' },
     { icon: SiNodedotjs, label: 'NodeJS' },
     { icon: SiNextdotjs, label: 'Next.js' },
     { icon: SiSvelte, label: 'Svelte' },
@@ -250,6 +275,7 @@ async function getResumeSkillList(): Promise<TechIconList> {
 }
 
 export const companyToTechListMap = new Map<CompanyKeys, () => Promise<TechIconList>>([
+  ['kiutee', getKiuteeIcons],
   ['parkMobile_easyPark', getParkMobileIcons],
   ['soleFarms', getSoleFarmIcons],
   ['pickfu', getPickfuIcons],
