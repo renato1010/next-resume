@@ -11,7 +11,7 @@ const theme = extendTheme({
   config,
   fonts: {
     heading: `"Fira Sans", ${base.fonts?.heading}`,
-    body: `"Fira Sans", ${base.fonts?.body}`,
+    body: `"Ubuntu", ${base.fonts?.body}`,
   },
 });
 

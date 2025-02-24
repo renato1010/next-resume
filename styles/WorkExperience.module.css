@@ -10,7 +10,7 @@
   padding: 32px;
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 0.5rem;
   /* optional: Add drop shadow for floating paper effect. */
   /* filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1)); */
 }

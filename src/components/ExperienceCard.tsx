@@ -2,8 +2,8 @@ import { useMemo } from 'react';
 import { Box, Flex, VStack, Text, List, ListItem, ListIcon } from '@chakra-ui/react';
 import { ExperienceItem, TechItemsRowPlain, TechItemsRow } from '@components';
 import { companyToTechListMap } from '@utils/dynamicGetIconModules';
-import { FaRegCheckCircle } from 'react-icons/fa';
 import data from '@utils/data/renato-resume-data.json';
+import { PiDotOutline } from 'react-icons/pi';
 
 type Data = typeof data;
 type Projects = Data['work-experience']['projects'];
@@ -19,8 +19,8 @@ const ExperienceCard = ({ companyKey, plain = false }: ExperienceCardProps) => {
   const content: Data['work-experience']['projects'][keyof Projects] =
     data['work-experience']['projects'][companyKey];
   return (
-    <Box padding="3" boxShadow="none" border="1px solid #eeeaea">
-      <VStack w="100%" h="100%" align="stretch" bg="rgb(244, 244, 244,0.4)">
+    <Box boxShadow="none">
+      <VStack w="100%" h="100%" align="stretch">
         <Flex>
           <Flex alignItems="center" w={1 / 4}>
             <Text my={0} fontSize="14px" fontWeight="600">
@@ -55,7 +55,7 @@ const ExperienceCard = ({ companyKey, plain = false }: ExperienceCardProps) => {
           </Flex>
           <Box w={3 / 4}>
             <List
-              spacing={2}
+              spacing={0}
               fontSize="14px"
               textAlign="justify"
               px={plain ? 1 : 0}
@@ -64,7 +64,11 @@ const ExperienceCard = ({ companyKey, plain = false }: ExperienceCardProps) => {
               {content.achievements.map((item) => {
                 return (
                   <ListItem key={item}>
-                    {plain ? null : <ListIcon as={FaRegCheckCircle} color="blue.500" w="14px" />}
+                    {plain ? null : (
+                      <ListIcon as="svg" color="blue.500" w="14px">
+                        {PiDotOutline({ size: '28px', color: 'blue.500' })}
+                      </ListIcon>
+                    )}
                     <Text display="inline" dangerouslySetInnerHTML={{ __html: item }} />
                   </ListItem>
                 );
@@ -80,9 +84,9 @@ const ExperienceCard = ({ companyKey, plain = false }: ExperienceCardProps) => {
           </Flex>
           <Box w={3 / 4}>
             {plain ? (
-              <TechItemsRowPlain horizontalPos="start" icons={iconList} />
+              <TechItemsRowPlain horizontalPos="end" icons={iconList} />
             ) : (
-              <TechItemsRow horizontalPos="start" icons={iconList} />
+              <TechItemsRow horizontalPos="end" icons={iconList} />
             )}
           </Box>
         </Flex>

@@ -6,23 +6,23 @@ import data from '@utils/data/renato-resume-data.json';
 
 const {
   'work-experience': {
-    projects: { kiutee, parkMobile_easyPark }
+    projects: { independent_contractor, kiutee }
   }
 } = data;
-const companyList = [kiutee, parkMobile_easyPark];
+const companyList = [independent_contractor, kiutee];
 const ExperienceSectionPLain = () => {
+  const contractorList = useMemo(() => {
+    const listFactory = companyToTechListMap.get('independent_contractor')!;
+    return listFactory();
+  }, []);
   const kiuteeList = useMemo(() => {
     const listFactory = companyToTechListMap.get('kiutee')!;
     return listFactory();
   }, []);
-  const parkMobileList = useMemo(() => {
-    const listFactory = companyToTechListMap.get('parkMobile_easyPark')!;
-    return listFactory();
-  }, []);
 
-  const companyIconsList = [kiuteeList, parkMobileList];
+  const companyIconsList = [contractorList, kiuteeList];
   return (
-    <VStack spacing="2">
+    <VStack spacing="1">
       {companyList.map(({ title, subTitle, projectName, achievements }, idx) => (
         <ExperienceItem title={title} subtitle={subTitle} key={title}>
           <Text my={1} fontSize="14px" textColor="blue.800" textDecoration="underline">

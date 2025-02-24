@@ -9,7 +9,7 @@ type ExperienceItemProps = {
 const ExperienceItem = ({
   title,
   subtitle,
-  showBorder = true,
+  showBorder = false,
   children,
 }: PropsWithChildren<ExperienceItemProps>) => {
   return (

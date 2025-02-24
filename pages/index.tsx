@@ -32,10 +32,11 @@ const Home: NextPage = () => {
       year: 'numeric',
       month: 'long'
     }).formatToParts(new Date());
+    const isPlain = plain === 'true';
     const month = parts.filter((p) => p.type === 'month').map((p) => p.value);
     const year = parts.filter((p) => p.type === 'year').map((p) => p.value);
-    return `resume_renato_perez_fullstack_dev_page1_${month}-${year}.pdf`;
-  }, []);
+    return `resume_renato_perez_ai_fullstack_page1_${month}_${year}${isPlain ? '_ats' : ''}.pdf`;
+  }, [plain]);
 
   if (!showContent) {
     return null;
@@ -47,16 +48,16 @@ const Home: NextPage = () => {
       </a>
       <Page>
         <Flex w="100%" h="100%" align="stretch" bg="white">
-          <VStack w="35%" h="100%" spacing={4}>
+          <VStack w="35%" h="100%" justify={'space-between'}>
             <DevPic />
             <Contact />
             {plain === 'true' ? <SkillListPlain /> : <SkillList />}
             <LanguagesSection />
           </VStack>
-          <VStack w="65%" h="100%" px="3">
+          <VStack w="65%" h="100%" px="3" justify={'space-between'}>
             <Title />
             <About />
-            <HeadingSection title="work experience" />
+            <HeadingSection title="tech roles" />
             {plain === 'true' ? <ExperienceSectionPLain /> : <ExperienceSection />}
           </VStack>
         </Flex>

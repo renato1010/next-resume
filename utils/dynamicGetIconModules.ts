@@ -1,6 +1,7 @@
 import { type IconType } from 'react-icons';
 
 export type CompanyKeys =
+  | 'independent_contractor'
   | 'kiutee'
   | 'parkMobile_easyPark'
   | 'soleFarms'
@@ -16,8 +17,27 @@ type TechIconItem = {
 };
 export type TechIconList = ReadonlyArray<TechIconItem>;
 
+async function getIndependentContractorIcons(): Promise<TechIconList> {
+  const { SiTypescript, SiCloudflare, SiLangchain } = await import('react-icons/si');
+  const { TbBrandAzure } = await import('react-icons/tb');
+  return [
+    {
+      icon: SiTypescript,
+      label: 'Typescript'
+    },
+    {
+      icon: SiCloudflare,
+      label: 'Cloudflare'
+    },
+    { icon: SiLangchain, label: 'Langchain' },
+    { icon: TbBrandAzure, label: 'AzureOpenAI' }
+  ];
+}
+
 async function getKiuteeIcons(): Promise<TechIconList> {
-  const { SiNextdotjs, SiTailwindcss, SiShopify, SiAmazonaws } = await import('react-icons/si');
+  const { SiNextdotjs, SiTailwindcss, SiShopify, SiAmazonwebservices } = await import(
+    'react-icons/si'
+  );
 
   const { LuBrainCircuit } = await import('react-icons/lu');
 
@@ -38,13 +58,12 @@ async function getKiuteeIcons(): Promise<TechIconList> {
       icon: LuBrainCircuit,
       label: 'Langchain'
     },
-    { icon: SiAmazonaws, label: 'Amazon web services' }
+    { icon: SiAmazonwebservices, label: 'Amazon web services' }
   ];
 }
 async function getParkMobileIcons(): Promise<TechIconList> {
-  const { SiReact, SiNextdotjs, SiJavascript, SiNodedotjs, SiSentry, SiAmazonaws } = await import(
-    'react-icons/si'
-  );
+  const { SiReact, SiNextdotjs, SiJavascript, SiNodedotjs, SiSentry, SiAmazonwebservices } =
+    await import('react-icons/si');
   const { IoLanguage } = await import('react-icons/io5');
 
   return [
@@ -68,7 +87,7 @@ async function getParkMobileIcons(): Promise<TechIconList> {
       icon: SiSentry,
       label: 'Sentry'
     },
-    { icon: SiAmazonaws, label: 'Amazon web services' },
+    { icon: SiAmazonwebservices, label: 'Amazon web services' },
     { icon: IoLanguage, label: 'multi-lang' }
   ];
 }
@@ -108,10 +127,17 @@ async function getSoleFarmIcons(): Promise<TechIconList> {
   ];
 }
 async function getPickfuIcons(): Promise<TechIconList> {
-  const { SiAmazonaws, SiNextdotjs, SiTypescript, SiNodedotjs, SiReact, SiPrisma, SiPostgresql } =
-    await import('react-icons/si');
+  const {
+    SiAmazonwebservices,
+    SiNextdotjs,
+    SiTypescript,
+    SiNodedotjs,
+    SiReact,
+    SiPrisma,
+    SiPostgresql
+  } = await import('react-icons/si');
   return [
-    { icon: SiAmazonaws, label: 'Amazon web services' },
+    { icon: SiAmazonwebservices, label: 'Amazon web services' },
     {
       icon: SiNextdotjs,
       label: 'Next.js'
@@ -186,12 +212,14 @@ async function getBairesIcons(): Promise<TechIconList> {
 }
 
 async function getLetuletIcons(): Promise<TechIconList> {
-  const { SiAngular, SiAmazonaws, SiJavascript, SiTypescript } = await import('react-icons/si');
+  const { SiAngular, SiAmazonwebservices, SiJavascript, SiTypescript } = await import(
+    'react-icons/si'
+  );
   const { FaJava } = await import('react-icons/fa');
   return [
     { icon: SiAngular, label: 'Angular Framework' },
     {
-      icon: SiAmazonaws,
+      icon: SiAmazonwebservices,
       label: 'Amazon web services'
     },
     { icon: SiJavascript, label: 'Javascript' },
@@ -206,12 +234,11 @@ async function getLetuletIcons(): Promise<TechIconList> {
   ];
 }
 async function getFoodologistIcons(): Promise<TechIconList> {
-  const { SiAmazonaws, SiNodedotjs, SiNpm, SiJavascript, SiLaravel, SiPython } = await import(
-    'react-icons/si'
-  );
+  const { SiAmazonwebservices, SiNodedotjs, SiNpm, SiJavascript, SiLaravel, SiPython } =
+    await import('react-icons/si');
   return [
     {
-      icon: SiAmazonaws,
+      icon: SiAmazonwebservices,
       label: 'Amazon web services'
     },
     { icon: SiNodedotjs, label: 'NodeJS' },
@@ -241,20 +268,20 @@ async function getResumeSkillList(): Promise<TechIconList> {
     SiPostgresql,
     SiMongodb,
     SiGooglecloud,
-    SiAmazonaws,
+    SiAmazonwebservices,
     SiLinux,
     SiDocker,
     SiTailwindcss,
-    SiCss3,
-    SiHtml5,
-    SiTerraform
+    SiTerraform,
+    SiLangchain,
+    SiCypress
   } = await import('react-icons/si');
-  const { LangchainLogo } = await import('@icons');
+  const { PlaywrightIcon } = await import('@icons');
   return [
     { icon: SiTypescript, label: 'Typescript' },
     { icon: SiJavascript, label: 'Javascript' },
     { icon: SiReact, label: 'React' },
-    { icon: LangchainLogo as IconType, label: 'Langchain' },
+    { icon: SiLangchain, label: 'Langchain' },
     { icon: SiNodedotjs, label: 'NodeJS' },
     { icon: SiNextdotjs, label: 'Next.js' },
     { icon: SiSvelte, label: 'Svelte' },
@@ -264,17 +291,18 @@ async function getResumeSkillList(): Promise<TechIconList> {
     { icon: SiPostgresql, label: 'PostgresQL' },
     { icon: SiMongodb, label: 'MongoDB' },
     { icon: SiGooglecloud, label: 'Google Cloud' },
-    { icon: SiAmazonaws, label: 'Amazon Cloud' },
+    { icon: SiAmazonwebservices, label: 'Amazon Cloud' },
     { icon: SiTerraform, label: 'Terraform' },
     { icon: SiLinux, label: 'Linux' },
     { icon: SiDocker, label: 'Docker' },
     { icon: SiTailwindcss, label: 'TailwindCSS' },
-    { icon: SiCss3, label: 'CSS' },
-    { icon: SiHtml5, label: 'HTML' }
-  ];
+    { icon: SiCypress, label: 'Cypress' },
+    { icon: PlaywrightIcon, label: 'Playwright' }
+  ].sort((a, b) => a.label.localeCompare(b.label));
 }
 
 export const companyToTechListMap = new Map<CompanyKeys, () => Promise<TechIconList>>([
+  ['independent_contractor', getIndependentContractorIcons],
   ['kiutee', getKiuteeIcons],
   ['parkMobile_easyPark', getParkMobileIcons],
   ['soleFarms', getSoleFarmIcons],

@@ -1,4 +1,4 @@
-import { Heading } from "@chakra-ui/react";
+import { Heading } from '@chakra-ui/react';
 
 type HeadingSectionProps = {
   title: string;
@@ -10,7 +10,7 @@ const HeadingSection = ({ title }: HeadingSectionProps) => {
       as="h3"
       fontSize="20px"
       fontWeight="medium"
-      mb="1"
+      my="0"
       textAlign="left"
       textTransform="capitalize"
     >

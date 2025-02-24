@@ -21,7 +21,7 @@ const SkillList = () => {
       <SimpleGrid columns={2} spacing={4} w="100%">
         {skills.map((skill) => (
           <HStack key={skill.label} alignItems="center">
-            <TechItem width="16px" height="16px" icon={skill.icon} label={skill.label} />
+            <TechItem width="20px" height="20px" icon={skill.icon} label={skill.label} />
             <Text fontSize="14px" color="blue.700">
               {skill.label}
             </Text>

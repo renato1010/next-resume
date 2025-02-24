@@ -1,28 +1,25 @@
 import { Box, Heading, Text } from '@chakra-ui/react';
+import { BoldText } from '@components';
 
 const About = () => {
   return (
-    <Box w="100%" p="2" border="1px solid #eeeaea">
+    <Box w="100%" p="2">
       <Heading as="h3" fontSize="24px" fontWeight="medium">
         About
       </Heading>
       <Text mt="2" fontWeight="200" fontSize="15px" lineHeight="1.2" textAlign="justify">
-        With over 12 years of web development experience, I have honed my skills across all stages
-        of the software development lifecycle. My journey has seen me seamlessly transition from
-        managing codebases for small projects to leading cross-functional teams in building complex
-        enterprise solutions. I have a proven track record in developing high-traffic public
-        websites, managing company brand assets, and modernizing legacy systems to cutting-edge
-        architectures.
-        <br /> My expertise encompasses a diverse and current toolkit, including technologies such
-        as &nbsp;
-        <span style={{ fontWeight: 'bold' }}>
-          TypeScript, React, Svelte, Next.js, Node.js, Serverless, AWS, and Terraform.
-        </span>
-        Recently, I have specialized in developing LLM-powered Next.js applications using tools
-        like&nbsp;
-        <span style={{ fontWeight: 'bold' }}>Langchain</span>, integrating advanced AI capabilities
-        into web solutions. I am adept at delivering high-value solutions that meet both technical
-        and business needs, ensuring robust, scalable, and innovative web applications.
+        Over more than a decade refining web solutions, I’ve gone from taming small codebases to
+        leading cross-functional teams on enterprise-scale projects. I’ve built and maintained
+        applications for MAU&apos;s and revitalized legacy systems with future-proof architectures.
+        My toolkit spans&nbsp;
+        <BoldText>TypeScript, React, Svelte, Next.js, Node.js, Serverless, AWS,</BoldText> and&nbsp;
+        <BoldText>Terraform</BoldText>. Lately, I&apos;ve ventured into&nbsp;
+        <BoldText>Generative AI</BoldText>, integrating <BoldText>LLM&apos;s</BoldText> into
+        full-stack development with frameworks like <BoldText>LangChain/LangGraph</BoldText> and
+        vector solutions such as Pinecone, MongoDB, or Postgres+Pgvector. This shift propelled me
+        from a conventional Fullstack Developer to an <BoldText>AI Engineer</BoldText>. At the
+        intersection of modern web development and Generative AI, I craft solutions that exceed
+        business goals while redefining user experiences.
       </Text>
     </Box>
   );

@@ -14,4 +14,5 @@ export * from './HeadingSection';
 export * from './LanguagesSection';
 export * from './WorkExperience';
 export * from './ExperienceCard';
-export * from "./TechItemRowPlain";
+export * from './TechItemRowPlain';
+export * from './bold-text';
